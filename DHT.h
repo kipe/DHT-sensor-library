@@ -27,10 +27,9 @@ class DHT {
         boolean read(void);
         unsigned long _lastreadtime;
         boolean firstreading;
-        uint16_t color;
 
     public:
-        DHT(uint8_t pin, uint8_t type, uint16_t color=0xFFFF, uint8_t count=6);
+        DHT(uint8_t pin, uint8_t type, uint8_t count=6);
         void begin(void);
         float readTemperature(bool S=false);
         float convertCtoF(float);
